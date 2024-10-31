@@ -19,7 +19,7 @@ export default {
   },
   presets: [
     createPreset({
-      preset: "ocean",
+      preset: "vitepress",
     }),
   ],
 };
