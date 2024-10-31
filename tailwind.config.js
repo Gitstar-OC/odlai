@@ -17,9 +17,5 @@ export default {
       },
     },
   },
-  presets: [
-    createPreset({
-      preset: "neutral",
-    }),
-  ],
+  presets: [createPreset()],
 };
