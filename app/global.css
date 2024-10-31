@@ -2,12 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  /* hsl colors */
-  /* use whitespace instead of comma */
+/* :root {
   --fd-background: 0 0% 100%;
   --fd-foreground: 222.2 47.4% 11.2%;
 
   --fd-muted: 210 40% 96.1%;
   --fd-muted-foreground: 215.4 16.3% 46.9%;
-}
+} */
