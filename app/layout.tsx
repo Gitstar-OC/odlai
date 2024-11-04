@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     description:
       "Courses, code, news, research, and community for building AI-powered products.",
   },
-  metadataBase: "https://www.opendeeplearning.xyz/",
+  // metadataBase: "https://www.opendeeplearning.xyz/",
 };
 
 export const viewport: Viewport = {
