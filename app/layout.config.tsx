@@ -1,14 +1,39 @@
-import type { BaseLayoutProps } from 'fumadocs-ui/layouts/shared';
+import type { BaseLayoutProps } from "fumadocs-ui/layouts/shared";
+import Image from "next/image";
+import DarkLogo from "@/public/logo-dark.png";
+import LightLogo from "@/public/logo-light.png";
+
+export const logo = (
+  <>
+    <Image
+      src={LightLogo}
+      className="dark:hidden w-5 md:w-5"
+      alt="OpenDeepLearning"
+    />
+    <Image
+      src={DarkLogo}
+      className="hidden dark:flex w-5 md:w-5"
+      alt="OpenDeepLearning"
+    />
+  </>
+);
 
 export const baseOptions: BaseLayoutProps = {
   nav: {
-    title: 'OpenDeepLearning',
+    title: (
+      <>
+        {logo}
+        <span className="text-[15px] font-medium">
+          <span>OpenDeepLearning</span>
+        </span>
+      </>
+    ),
   },
   links: [
     {
-      text: 'Documentation',
-      url: '/docs',
-      active: 'nested-url',
+      text: "Documentation",
+      url: "/docs",
+      active: "nested-url",
     },
     {
       type: "icon",
