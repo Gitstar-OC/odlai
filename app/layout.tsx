@@ -12,6 +12,9 @@ export const metadata = createMetadata({
   },
   description: 'Resources for learning Deep Learning.',
   metadataBase: baseUrl,
+  icons: {
+    icon: "/favicon.ico",
+  },
 });
 
 export const viewport: Viewport = {
