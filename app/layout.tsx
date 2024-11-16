@@ -1,31 +1,18 @@
 import "./global.css";
-import { RootProvider } from "fumadocs-ui/provider";
 import { GeistSans } from "geist/font/sans";
-import { GeistMono } from "geist/font/mono";
-import type { Metadata } from "next";
 import type { Viewport } from 'next';
+import { GeistMono } from "geist/font/mono";
+import { baseUrl, createMetadata } from '@/utils/metadata';
+import { RootProvider } from "fumadocs-ui/provider";
 
-export const metadata: Metadata = {
+export const metadata = createMetadata({
   title: {
-    default: "OpenDeepLearning",
-    template: "%s | OpenDeepLearning",
+    template: '%s | OpenDeepLearning',
+    default: 'OpenDeepLearning',
   },
-  description:
-    "Courses, code, news, research, and community for building AI-powered products.",
-  twitter: {
-    card: "summary_large_image",
-  },
-  openGraph: {
-    images: "/opengraph-image.png",
-    title: {
-      default: "OpenDeepLearning",
-      template: "%s | OpenDeepLearning",
-    },
-    description:
-      "Courses, code, news, research, and community for building AI-powered products.",
-  },
-  // metadataBase: "https://www.opendeeplearning.xyz/",
-};
+  description: 'Resources for learning Deep Learning.',
+  metadataBase: baseUrl,
+});
 
 export const viewport: Viewport = {
   themeColor: [
