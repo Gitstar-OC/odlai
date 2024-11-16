@@ -1,26 +1,33 @@
-# odl
+<div align="center">
+  <a href="https://www.opendeeplearning.xyz/" target="_blank" >
+    <img src="public/opendeeplearning.png" alt="OpenDeepLearning" width="450"/>
+  </a>
 
-This is a Next.js application generated with
-[Create Fumadocs](https://github.com/fuma-nama/fumadocs).
+<a href="https://github.com/OpenDeepLearningAI/OpenDeepLearning/stargazers"><img src="https://img.shields.io/github/stars/OpenDeepLearningAI/OpenDeepLearning" alt="Stars Badge"/></a>
+<a href="https://github.com/OpenDeepLearningAI/OpenDeepLearning/network/members"><img src="https://img.shields.io/github/forks/OpenDeepLearningAI/OpenDeepLearning" alt="Forks Badge"/></a>
+<a href="https://github.com/OpenDeepLearningAI/OpenDeepLearning/pulls"><img src="https://img.shields.io/github/issues-pr/OpenDeepLearningAI/OpenDeepLearning" alt="Pull Requests Badge"/></a>
+<a href="https://github.com/OpenDeepLearningAI/OpenDeepLearning/issues"><img src="https://img.shields.io/github/issues/OpenDeepLearningAI/OpenDeepLearning" alt="Issues Badge"/></a>
+<a href="https://github.com/OpenDeepLearningAI/OpenDeepLearning/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/OpenDeepLearningAI/OpenDeepLearning?color=2b9348"></a>
+<a href="https://github.com/OpenDeepLearningAI/OpenDeepLearning/blob/master/LICENSE"><img src="https://img.shields.io/github/license/OpenDeepLearningAI/OpenDeepLearning?color=yello" alt="License Badge"/></a>
 
-Run development server:
+</div>
 
-```bash
-npm run dev
-# or
+## Installation
+
+Ensure [pnpm](https://pnpm.io) is installed on your system. If not, follow the [installation instructions](https://pnpm.io/installation) on their website.
+
+```
+# download the site code with git
+git clone git clone https://github.com/OpenDeepLearningAI/OpenDeepLearning.git
+
+# Navigate into the project directory
+cd OpenDeepLearning
+
+# install the dependencies.
+pnpm install
+
+# start the development server
 pnpm dev
-# or
-yarn dev
 ```
 
-Open http://localhost:3000 with your browser to see the result.
-
-## Learn More
-
-To learn more about Next.js and Fumadocs, take a look at the following
-resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js
-  features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-- [Fumadocs](https://fumadocs.vercel.app) - learn about Fumadocs
+The server will be running at [http://localhost:3000](http://localhost:3000).

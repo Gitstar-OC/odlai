@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* .ui {
+.ui {
   --primary: var(--ui-color);
 }
 
@@ -24,4 +24,4 @@
   --headless-color: 250 100% 80%;
   --mdx-color: 0 0% 100%;
   --ui-color: 217deg 92% 76%;
-} */
+}
