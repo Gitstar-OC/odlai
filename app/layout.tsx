@@ -38,15 +38,15 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className="flex flex-col min-h-screen">
-        <Link
-          href="https://github.com/OpenDeepLearningAI/OpenDeepLearning"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Banner variant="rainbow" id="hello-world">
+        <Banner variant="rainbow" id="hello-world">
+          <Link
+            href="https://github.com/OpenDeepLearningAI/OpenDeepLearning"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             ⭐ Star OpenDeepLearning on GitHub!
-          </Banner>
-        </Link>
+          </Link>
+        </Banner>
         <RootProvider>{children}</RootProvider>
       </body>
     </html>
