@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 :root {
-	--primary: 230 90% 72%;
+  --primary: 220deg 91% 54%;
 }
 
-.dark{
+.dark {
   --primary: 217deg 92% 76%;
 }
