@@ -2,22 +2,36 @@ import "./global.css";
 import { GeistSans } from "geist/font/sans";
 import type { Viewport } from "next";
 import { GeistMono } from "geist/font/mono";
-import { baseUrl, createMetadata } from "@/utils/metadata";
+import { baseUrl, bannerUrl } from "@/utils/metadata";
+import type { Metadata } from "next/types";
 import { RootProvider } from "fumadocs-ui/provider";
 import { Banner } from "fumadocs-ui/components/banner";
 import Link from "next/link";
 
-export const metadata = createMetadata({
+export const metadata: Metadata = {
   title: {
-    template: "%s | OpenDeepLearning",
     default: "OpenDeepLearning",
+    template: "%s | OpenDeepLearning",
   },
-  description: "Resources for learning Deep Learning.",
+  description:
+    "Courses, code, news, research, and community for building AI-powered products.",
+  twitter: {
+    card: "summary_large_image",
+  },
+  openGraph: {
+    images: "/banner.png",
+    title: {
+      default: "OpenDeepLearning",
+      template: "%s | OpenDeepLearning",
+    },
+    description:
+      "Courses, code, news, research, and community for building AI-powered products.",
+  },
   metadataBase: baseUrl,
   icons: {
     icon: "/favicon.ico",
   },
-});
+};
 
 export const viewport: Viewport = {
   themeColor: [
@@ -39,11 +53,7 @@ export default function RootLayout({
     >
       <body className="flex flex-col min-h-screen">
         <Banner variant="rainbow" id="hello-world">
-          <Link
-            href="https://github.com/OpenDeepLearningAI/OpenDeepLearning"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <Link href={bannerUrl} target="_blank" rel="noopener noreferrer">
             ⭐ Star OpenDeepLearning on GitHub!
           </Link>
         </Banner>
