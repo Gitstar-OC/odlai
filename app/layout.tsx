@@ -1,12 +1,13 @@
 import "./global.css";
+import type { ReactNode } from "react";
 import { GeistSans } from "geist/font/sans";
 import type { Viewport } from "next";
 import { GeistMono } from "geist/font/mono";
 import { baseUrl, bannerUrl } from "@/utils/metadata";
 import type { Metadata } from "next/types";
 import { RootProvider } from "fumadocs-ui/provider";
-import { Banner } from "fumadocs-ui/components/banner";
-import Link from "next/link";
+// import { Banner } from "fumadocs-ui/components/banner";
+// import Link from "next/link";
 
 export const metadata: Metadata = {
   title: {
@@ -40,11 +41,7 @@ export const viewport: Viewport = {
   ],
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html
       lang="en"
@@ -52,11 +49,11 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className="flex flex-col min-h-screen">
-        <Banner variant="rainbow" id="hello-world">
+        {/* <Banner variant="rainbow" id="hello-world">
           <Link href={bannerUrl} target="_blank" rel="noopener noreferrer">
             ⭐ Star OpenDeepLearning on GitHub!
           </Link>
-        </Banner>
+        </Banner> */}
         <RootProvider>{children}</RootProvider>
       </body>
     </html>
