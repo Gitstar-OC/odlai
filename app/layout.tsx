@@ -1,16 +1,18 @@
 import "./global.css";
 import { GeistSans } from "geist/font/sans";
-import type { Viewport } from 'next';
+import type { Viewport } from "next";
 import { GeistMono } from "geist/font/mono";
-import { baseUrl, createMetadata } from '@/utils/metadata';
+import { baseUrl, createMetadata } from "@/utils/metadata";
 import { RootProvider } from "fumadocs-ui/provider";
+import { Banner } from "fumadocs-ui/components/banner";
+import Link from "next/link";
 
 export const metadata = createMetadata({
   title: {
-    template: '%s | OpenDeepLearning',
-    default: 'OpenDeepLearning',
+    template: "%s | OpenDeepLearning",
+    default: "OpenDeepLearning",
   },
-  description: 'Resources for learning Deep Learning.',
+  description: "Resources for learning Deep Learning.",
   metadataBase: baseUrl,
   icons: {
     icon: "/favicon.ico",
@@ -19,8 +21,8 @@ export const metadata = createMetadata({
 
 export const viewport: Viewport = {
   themeColor: [
-    { media: '(prefers-color-scheme: dark)', color: '#0A0A0A' },
-    { media: '(prefers-color-scheme: light)', color: '#fff' },
+    { media: "(prefers-color-scheme: dark)", color: "#0A0A0A" },
+    { media: "(prefers-color-scheme: light)", color: "#fff" },
   ],
 };
 
@@ -36,6 +38,15 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className="flex flex-col min-h-screen">
+        <Link
+          href="https://github.com/OpenDeepLearningAI/OpenDeepLearning"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Banner variant="rainbow" id="hello-world">
+            ⭐ Star OpenDeepLearning on GitHub!
+          </Banner>
+        </Link>
         <RootProvider>{children}</RootProvider>
       </body>
     </html>

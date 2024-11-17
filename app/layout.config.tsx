@@ -23,7 +23,7 @@ export const baseOptions: BaseLayoutProps = {
     title: (
       <>
         {logo}
-        <span className="text-[15px] font-medium">
+        <span className="text-[14.5px] font-medium">
           <span>OpenDeepLearning</span>
         </span>
       </>
