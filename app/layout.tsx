@@ -1,7 +1,7 @@
 import "./global.css";
 import type { ReactNode } from "react";
 import { GeistSans } from "geist/font/sans";
-import type { Viewport } from "next";
+// import type { Viewport } from "next";
 import { GeistMono } from "geist/font/mono";
 import { baseUrl, bannerUrl } from "@/utils/metadata";
 import type { Metadata } from "next/types";
@@ -34,12 +34,12 @@ export const metadata: Metadata = {
   },
 };
 
-export const viewport: Viewport = {
-  themeColor: [
-    { media: "(prefers-color-scheme: dark)", color: "#0A0A0A" },
-    { media: "(prefers-color-scheme: light)", color: "#fff" },
-  ],
-};
+// export const viewport: Viewport = {
+//   themeColor: [
+//     { media: "(prefers-color-scheme: dark)", color: "#0A0A0A" },
+//     { media: "(prefers-color-scheme: light)", color: "#fff" },
+//   ],
+// };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
