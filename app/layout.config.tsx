@@ -1,13 +1,27 @@
 import type { BaseLayoutProps } from "fumadocs-ui/layouts/shared";
 import type { LinkItemType } from "fumadocs-ui/layouts/docs";
 import Image from "next/image";
-import { BookMarked, PencilLine, Code, Book, Terminal } from "lucide-react";
+import { BookMarked, Code } from "lucide-react";
 import DarkLogo from "@/public/logo-dark.png";
 import LightLogo from "@/public/logo-light.png";
 import { SiPytorch, SiGnubash } from "react-icons/si";
 import { FaPython } from "react-icons/fa";
 
 export const linkItems: LinkItemType[] = [
+  {
+    text: "Resources",
+    url: "/resources",
+    active: "url",
+  },
+  {
+    text: "Blog",
+    url: "/blog",
+    active: "nested-url",
+  },
+  {
+    text: "About",
+    url: "/about",
+  },
   {
     type: "icon",
     url: "https://github.com/OpenDeepLearningAI/OpenDeepLearning",
@@ -64,7 +78,7 @@ export const baseOptions: BaseLayoutProps = {
       text: "Courses",
       items: [
         {
-          icon: <BookMarked />,
+          icon: <FaPython />,
           text: "Python 101",
           description: "Python for Data Science",
           url: "/docs/python",
