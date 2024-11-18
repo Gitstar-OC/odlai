@@ -1,15 +1,10 @@
 {
-  "title": "Python for DS",
-  "description": "Python for Data Dcience",
+  "title": "Pytorch",
+  "description": "Learn Pytorch",
   "root": true,
   "pages": [
     "index",
     "setup",
-    "---Courses---",
-    "python",
-    "numpy",
-    "pandas",
-    "matplotlib",
     "---Useful links---",
     "[Community](https://discord.com/invite/QgZHExcssR)",
     "[Forum](https://discord.com/invite/QgZHExcssR)",

@@ -1,16 +1,3 @@
 {
-  "pages": [
-    "index",
-    "setup",
-    "---Courses---",
-    "python",
-    "numpy",
-    "pandas",
-    "matplotlib",
-    "---Useful links---",
-    "[Community](https://discord.com/invite/QgZHExcssR)",
-    "[Forum](https://discord.com/invite/QgZHExcssR)",
-    "[YouTube](https://discord.com/invite/QgZHExcssR)",
-    "..."
-  ]
+  "pages": ["python", "pytorch"]
 }
