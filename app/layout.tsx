@@ -7,8 +7,8 @@ import { baseUrl, bannerUrl } from "@/utils/metadata";
 import { RootProvider } from "fumadocs-ui/provider";
 import type { Metadata } from "next/types";
 // import { Banner } from "fumadocs-ui/components/banner";
-import Link from "next/link";
-import { FaGithubAlt } from "react-icons/fa6";
+// import Link from "next/link";
+// import { FaGithubAlt } from "react-icons/fa6";
 import Preview from "./components/preview/banner";
 
 
