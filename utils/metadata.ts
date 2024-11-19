@@ -26,6 +26,3 @@ export function createMetadata(override: Metadata): Metadata {
 }
 
 export const baseUrl = "https://odldocs.vercel.app/";
-
-export const bannerUrl =
-  "https://github.com/OpenDeepLearningAI/OpenDeepLearning";
