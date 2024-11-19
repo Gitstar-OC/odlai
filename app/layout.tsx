@@ -1,4 +1,4 @@
-import "katex/dist/katex.css";
+import 'katex/dist/katex.css';
 import "./global.css";
 import type { ReactNode } from "react";
 import { GeistSans } from "geist/font/sans";
