@@ -5,7 +5,7 @@ import { FaGithubAlt } from "react-icons/fa6";
 
 export default function Preview(): ReactNode {
   return (
-    <div className="flex flex-col gap-4">
+    <div>
       <Banner
         className="z-0"
         id="hello-world"
