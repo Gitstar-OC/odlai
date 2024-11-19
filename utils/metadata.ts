@@ -6,7 +6,7 @@ export function createMetadata(override: Metadata): Metadata {
     openGraph: {
       title: override.title ?? undefined,
       description: override.description ?? undefined,
-      url: "https://odlai.vercel.app/",
+      url: "https://odlai.vercel.app",
       images: "/banner.png",
       siteName: "OpenDeepLearning",
       ...override.openGraph,
