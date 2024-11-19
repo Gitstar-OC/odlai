@@ -7,7 +7,7 @@ export default function Preview(): ReactNode {
   return (
     <div>
       <Banner
-        className="z-0"
+        // className="z-0"
         id="hello-world"
         variant="rainbow"
         // changeLayout={false}
