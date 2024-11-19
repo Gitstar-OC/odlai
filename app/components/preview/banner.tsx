@@ -1,9 +1,9 @@
-import { type ReactNode } from "react";
+// import { type ReactNode } from "react";
 import { Banner } from "fumadocs-ui/components/banner";
 import Link from "next/link";
 import { FaGithubAlt } from "react-icons/fa6";
 
-export default function Preview(): ReactNode {
+export default function Preview() {
   return (
     <div>
       <Banner
