@@ -1,4 +1,4 @@
-import 'katex/dist/katex.css';
+import "katex/dist/katex.css";
 import "./global.css";
 import type { ReactNode } from "react";
 import { GeistSans } from "geist/font/sans";
@@ -16,7 +16,7 @@ export const metadata = createMetadata({
   },
   description:
     "Courses, code, news, research, and community for building AI-powered products..",
-    metadataBase: baseUrl,
+  metadataBase: baseUrl,
 });
 
 export default function RootLayout({ children }: { children: ReactNode }) {
