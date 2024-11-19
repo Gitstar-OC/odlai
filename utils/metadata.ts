@@ -7,7 +7,7 @@ export function createMetadata(override: Metadata): Metadata {
       title: override.title ?? undefined,
       description: override.description ?? undefined,
       url: "https://odlai.vercel.app",
-      images: "/banner.png",
+      images: [`${baseUrl}/banner.png`],
       siteName: "OpenDeepLearning",
       ...override.openGraph,
     },
@@ -16,7 +16,7 @@ export function createMetadata(override: Metadata): Metadata {
       creator: "@1msirius_",
       title: override.title ?? undefined,
       description: override.description ?? undefined,
-      images: "/banner.png",
+      images: [`${baseUrl}/banner.png`],
       ...override.twitter,
     },
     icons: {
