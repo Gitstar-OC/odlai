@@ -4,8 +4,9 @@ import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 import { baseUrl, createMetadata, bannerUrl } from "@/utils/metadata";
 import { RootProvider } from "fumadocs-ui/provider";
-// import { Banner } from "fumadocs-ui/components/banner";
-// import Link from "next/link";
+import { Banner } from "fumadocs-ui/components/banner";
+import Link from "next/link";
+import { FaGithubAlt } from "react-icons/fa6";
 
 export const metadata = createMetadata({
   title: {
@@ -25,11 +26,17 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       suppressHydrationWarning
     >
       <body className="flex flex-col min-h-screen">
-        {/* <Banner variant="rainbow" id="hello-world">
-          <Link href={bannerUrl} target="_blank" rel="noopener noreferrer">
-            ⭐ Star OpenDeepLearning on GitHub!
+        <Banner variant="rainbow" id="hello-world">
+          <Link
+            href={bannerUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center"
+          >
+            ⭐ Loving ODL? Leave a star!{" "}
+            <FaGithubAlt className="ml-2 text-lg" />
           </Link>
-        </Banner> */}
+        </Banner>
         <RootProvider>{children}</RootProvider>
       </body>
     </html>
