@@ -2,8 +2,8 @@ import type { BaseLayoutProps } from "fumadocs-ui/layouts/shared";
 import type { LinkItemType } from "fumadocs-ui/layouts/docs";
 import Image from "next/image";
 import { BookMarked, Code } from "lucide-react";
-import DarkLogo from "@/public/logo.png";
-import LightLogo from "@/public/logo.png";
+import DarkLogo from "@/public/logo-dark.png";
+import LightLogo from "@/public/logo-light.png";
 import { SiPytorch, SiGnubash } from "react-icons/si";
 import { FaPython } from "react-icons/fa";
 

@@ -10,7 +10,7 @@ import * as BiIcons from "react-icons/bi";
 import * as DiIcons from "react-icons/di";
 import * as FiIcons from "react-icons/fi";
 import * as SiIcons from "react-icons/si";
-import { IconWrapper } from "@/app/components/icon";
+import IconWrapper from "@/app/components/icon";
 
 const allIcons = {
   ...FaIcons,
