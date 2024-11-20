@@ -3,7 +3,7 @@ import { TerminalIcon } from 'lucide-react';
 import { type HTMLAttributes } from 'react';
 import { cn } from '@/utils/cn';
 
-export function IconContainer({
+export default function IconContainer({
   icon: Icon,
   ...props
 }: HTMLAttributes<HTMLDivElement> & {

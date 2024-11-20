@@ -1,14 +1,14 @@
 {
   "title": "Pytorch",
   "description": "Learn Pytorch",
-  "icon": "FaPython",
+  "icon": "Book",
   "root": true,
   "pages": [
     "index",
     "setup",
     "---Useful links---",
-    "[FaDiscord][Community](https://discord.com/)",
-    "[FaDiscourse][Forum](https://www.discourse.org/)",
-    "[FaYoutube][YouTube](https://www.youtube.com/)"
+    "[Book][Community](https://discord.com/)",
+    "[Book][Forum](https://www.discourse.org/)",
+    "[Book][YouTube](https://www.youtube.com/)"
   ]
 }

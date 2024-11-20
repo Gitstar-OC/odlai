@@ -2,7 +2,7 @@
   "title": "Python",
   "description": "Python Libraries",
   "root": true,
-  "icon": "FaPython",
+  "icon": "Book",
   "pages": [
     "index",
     "setup",
@@ -12,8 +12,8 @@
     "pandas",
     "matplotlib",
     "---Useful links---",
-    "[FaDiscord][Community](https://discord.com/)",
-    "[FaDiscourse][Forum](https://www.discourse.org/)",
-    "[FaYoutube][YouTube](https://www.youtube.com/)"
+    "[Book][Community](https://discord.com/)",
+    "[Book][Forum](https://www.discourse.org/)",
+    "[Book][YouTube](https://www.youtube.com/)"
   ]
 }
