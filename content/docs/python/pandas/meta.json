@@ -1,6 +1,6 @@
 {
   "title": "Pandas",
-  "description": "Python for Data Dcience",
+  "description": "Pandas",
   "icon": "SiPandas",
-  "pages": ["..."]
+  "pages": ["index"]
 }

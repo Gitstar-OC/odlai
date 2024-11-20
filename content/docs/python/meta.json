@@ -1,19 +1,19 @@
 {
-  "title": "Python 101",
-  "description": "Python for Data Dcience",
+  "title": "Python",
+  "description": "Python Libraries",
   "root": true,
   "icon": "FaPython",
   "pages": [
     "index",
     "setup",
-    "---Courses---",
+    "---Modules---",
     "python",
     "numpy",
     "pandas",
     "matplotlib",
     "---Useful links---",
-    "[FaDiscord][Community](https://discord.com/invite/QgZHExcssR)",
-    "[FaDiscourse][Forum](https://discord.com/invite/QgZHExcssR)",
-    "[FaYoutube][YouTube](https://www.youtube.com/@OpenDeepLearningAI)"
+    "[FaDiscord][Community](https://discord.com/)",
+    "[FaDiscourse][Forum](https://discord.com/)",
+    "[FaYoutube][YouTube](https://www.youtube.com/)"
   ]
 }

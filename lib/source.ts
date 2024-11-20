@@ -10,6 +10,7 @@ import * as BiIcons from "react-icons/bi";
 import * as DiIcons from "react-icons/di";
 import * as FiIcons from "react-icons/fi";
 import * as SiIcons from "react-icons/si";
+import { IconWrapper } from "@/app/components/icon";
 
 const allIcons = {
   ...FaIcons,
@@ -26,9 +27,14 @@ export const source = loader({
   source: createMDXSource(docs, meta),
   icon(icon) {
     if (!icon) return undefined;
-    if (icon in icons) return createElement(icons[icon as keyof typeof icons]);
-    if (icon in allIcons)
-      return createElement(allIcons[icon as keyof typeof allIcons]);
-    return undefined;
+    let iconElement;
+    if (icon in icons) {
+      iconElement = createElement(icons[icon as keyof typeof icons]);
+    } else if (icon in allIcons) {
+      iconElement = createElement(allIcons[icon as keyof typeof allIcons]);
+    } else {
+      return undefined;
+    }
+    return createElement(IconWrapper, { children: iconElement });
   },
 });
