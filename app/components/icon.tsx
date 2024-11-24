@@ -1,7 +1,7 @@
 import type { LucideIcon } from 'lucide-react';
 import { TerminalIcon } from 'lucide-react';
 import { type HTMLAttributes } from 'react';
-import { cn } from '@/utils/cn';
+import clsx from 'clsx';
 
 export default function IconContainer({
   icon: Icon,
@@ -12,12 +12,13 @@ export default function IconContainer({
   return (
     <div
       {...props}
-      className={cn(
-        'rounded-md  border bg-gradient-to-b from-muted to-secondary p-0.5 shadow-md [a[data-active=true]_&]:from-primary/60 [a[data-active=true]_&]:to-primary [a[data-active=true]_&]:text-primary-foreground',
-        props.className,
+      className={clsx(
+        'rounded-md border bg-gradient-to-b from-muted to-secondary p-0.5 shadow-md',
+        '[a[data-active=true]_&]:from-primary/60 [a[data-active=true]_&]:to-primary [a[data-active=true]_&]:text-primary-foreground',
+        props.className
       )}
     >
-      {Icon ? <Icon className='text-blue-500' /> : <TerminalIcon />}
+      {Icon ? <Icon className="text-blue-500" /> : <TerminalIcon />}
     </div>
   );
 }
