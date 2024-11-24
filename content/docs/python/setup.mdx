@@ -6,11 +6,21 @@ icon: Settings2
 
 ## Introduction
 
-Before we dive into Python for Machine Learning, let’s quickly look at the tools you'll use to write and run Python code. There are two main ways to work with Python: Shell and Notebook. Let’s explore each!
+Before diving into Python for Machine Learning, let’s set up the tools you’ll use to write and execute your code. There are two main environments for working with Python: **Shell** and **Notebook**. Let’s explore both.
+
+<Callout>
+  Install [Python](https://www.python.org/downloads/) and
+  [IPython](https://ipython.org/install.html) from the official docs if they're
+  not already installed on your system.
+</Callout>
 
 ## Shell
 
+The Shell is the simplest way to run Python commands interactively, executing code line by line directly in your terminal.
+
 ### Python
+
+To start the Python Shell, open your terminal and type `python`:
 
 ```sh title="Python Shell"
 (base) ➜  ~ python   # [!code highlight]
@@ -20,12 +30,14 @@ Type "help", "copyright", "credits" or "license" for more information.
 Python shell!
 >>> 4 + 9
 13
->>> 8 * 7
-56
 >>>
 ```
 
 ### Ipython
+
+[IPython](https://ipython.org/) is an enhanced version of the Python Shell with additional features like syntax highlighting, auto-completion, and better debugging tools.
+
+To start IPython, type `ipython` in your terminal:
 
 ```sh title="IPython Shell"
 (base) ➜  ~ ipython  # [!code highlight]
@@ -39,33 +51,28 @@ IPython Shell
 In [2]: 3 + 39
 Out[2]: 42
 
-In [3]: 5 * 21
-Out[3]: 105
-
-In [4]:
+In [3]:
 ```
 
-The Python Shell is the simplest way to run Python commands. Open your terminal, type python, and you’ll enter an interactive space where you can write and test code one line at a time. It’s a great way to quickly experiment or debug small snippets of code. A more advanced version is IPython, which adds features like syntax highlighting, auto-completion, and better debugging tools. You can install it by typing pip install ipython in your terminal.
+The Shell is excellent for quick experiments but isn’t ideal for larger, more complex projects. That’s where **Notebooks** come in.
 
 ## Notebooks
 
-Notebooks, built on top of [IPython](#ipython), are the best way to use Python for machine learning. As we’ve seen, working in the shell can be tricky, but notebooks make it easier by combining code, visualizations, and explanations in one place.
-
-Their interactive nature makes them ideal for experimenting, exploring data, developing models, and sharing code, which is why notebooks are widely used in the field of machine learning.
+A notebook is a web-based interactive environment built on top of [IPython](#ipython). As we’ve seen, working in the shell can be tricky, but notebooks make it easier by combining code, visualizations, and explanations in one place.
 
 ### Jupyter Notebook
 
-[Jupyter Notebook](https://jupyter.org/) is a web-based interactive environment built on top of [IPython](#ipython), making it ideal for development, creating visualizations, collaboration, and sharing.
+[Jupyter Notebook](https://jupyter.org/) is a local web-based notebook, ideal for development, collaboration, and sharing.
 
-You can install Jupyter Notebook using the command `pip install notebook` and start it by running `jupyter notebook`.
+Install it with the command `pip install notebook`, then launch it using `jupyter notebook`.
 
 This will launch a local web server, display a log of the server’s activity in the terminal, and automatically open the URL [localhost:8888](http://localhost:8888) in your browser, taking you to the Notebook interface.
 
 ![Jupyter Notebook](/courses/python/setup/notebook.gif)
 
-There is also an enhanced version of Jupyter called **JupyterLab**, which provides a more flexible and powerful environment, allowing you to work with multiple notebooks, terminals, and text editors in a single, integrated workspace.
+There is also an enhanced version of Jupyter Notebook called **JupyterLab**, which provides a more flexible and powerful environment, allowing you to work with multiple notebooks, terminals, and text editors in a single, integrated workspace.
 
-You can install it by running `pip install jupyterlab`, and start it by running `jupyter lab`.
+Install it with the command `pip install jupyterlab`, then launch it using `jupyter lab`.
 
 ![JupyterLab](/courses/python/setup/jupyterlab.gif)
 
@@ -93,4 +100,8 @@ Learn more about using Kaggle Notebooks in this [introduction](https://www.kaggl
 
 ## Which one to use?
 
-If you're unsure which environment to choose, [Google Colab](https://colab.research.google.com/) is a great option. It's easy to use, offers free access to powerful hardware, and has pre-installed machine learning libraries. Most users prefer Colab for these reasons, and for the rest of the course, we'll be using Colab.
+If you’re unsure which environment to choose, [Google Colab](#google-colab) is an best option. It’s user-friendly, provides free access to powerful hardware and comes with pre-installed machine learning libraries.
+
+For this course, we’ll be using Colab as our primary environment.
+
+You’re now all set up and ready to go!
