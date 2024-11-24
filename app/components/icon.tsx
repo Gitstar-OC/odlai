@@ -13,11 +13,11 @@ export default function IconContainer({
     <div
       {...props}
       className={cn(
-        'rounded-md border bg-gradient-to-b from-muted to-secondary p-0.5 shadow-md [a[data-active=true]_&]:from-primary/60 [a[data-active=true]_&]:to-primary [a[data-active=true]_&]:text-primary-foreground',
+        'rounded-md  border bg-gradient-to-b from-muted to-secondary p-0.5 shadow-md [a[data-active=true]_&]:from-primary/60 [a[data-active=true]_&]:to-primary [a[data-active=true]_&]:text-primary-foreground',
         props.className,
       )}
     >
-      {Icon ? <Icon /> : <TerminalIcon />}
+      {Icon ? <Icon className='text-blue-500' /> : <TerminalIcon />}
     </div>
   );
 }
